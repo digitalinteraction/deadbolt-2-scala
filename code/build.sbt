@@ -2,9 +2,7 @@ name := "deadbolt-scala"
 
 organization := "be.objectify"
 
-lazy val root = (project in file(".")).enablePlugins(PlayScala)
-
-scalaVersion := "2.11.7"
+lazy val root = Project(id = "deadbolt", base = file(".")).enablePlugins(PlayScala)
 
 libraryDependencies ++= Seq(
   cache,
@@ -19,4 +17,4 @@ resolvers += Resolver.sonatypeRepo("snapshots")
 
 fork in Test := true
 
-releasePublishArtifactsAction := PgpKeys.publishSigned.value
+// releasePublishArtifactsAction := PgpKeys.publishSigned.value

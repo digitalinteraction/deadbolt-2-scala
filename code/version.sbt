@@ -1,1 +1,1 @@
-version in ThisBuild := "2.5.2-SNAPSHOT"
+version in ThisBuild := "openlab-2.5.2-SNAPSHOT"
